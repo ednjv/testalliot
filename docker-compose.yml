@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  alliot-app:
+    image: johnpapa/angular-cli
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 4200:4200
+    command: "npm start"
