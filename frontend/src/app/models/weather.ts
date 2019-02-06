@@ -122,4 +122,6 @@ export interface WeatherDialogData {
   temperature: number;
   summary: string;
   timezone: string;
+  humidity: number;
+  windSpeed: number;
 }

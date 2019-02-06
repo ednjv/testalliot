@@ -17,4 +17,11 @@ export class WeatherDialogComponent {
     this.dialogRef.close();
   }
 
+  get humidity() {
+    return (this.data.humidity * 100).toFixed(1);
+  }
+
+  get windSpeed() {
+    return (this.data.windSpeed * 3.6).toFixed(1);
+  }
 }

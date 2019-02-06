@@ -76,7 +76,9 @@ export class AppComponent implements AfterViewInit {
       data: {
         temperature: weatherInfo.currently.temperature,
         summary: weatherInfo.currently.summary,
-        timezone: weatherInfo.timezone
+        timezone: weatherInfo.timezone,
+        windSpeed: weatherInfo.currently.windSpeed,
+        humidity: weatherInfo.currently.humidity
       }
     });
   }
