@@ -6,7 +6,17 @@ services:
     user: "node"
     working_dir: /home/node/app
     volumes:
-      - .:/home/node/app
+      - ./frontend/:/home/node/app
     ports:
       - 4200:4200
     command: "npm start"
+  alliot-server:
+    image: node:10.13.0
+    user: "node"
+    working_dir: /home/node/server
+    volumes:
+      - ./backend/:/home/node/server
+    ports:
+      - 3000:3000
+    command: "npm start"
+

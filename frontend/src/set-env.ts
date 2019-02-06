@@ -15,7 +15,8 @@ const targetPath = `./src/environments/environment.${environment}.ts`;
 const envConfigFile = `
 export const environment = {
   production: ${isProd},
-  mapsKey: "${process.env.MAPS_KEY}"
+  mapsKey: "${process.env.MAPS_KEY}",
+  apiUrl: "${process.env.API_URL}"
 };
 `;
 

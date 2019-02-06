@@ -1,27 +1,32 @@
-# Testalliot
+# Technical Alliot Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+A simple application based on the Google Maps API that displays weather information when you click on a location in the map.
 
-## Development server
+## Pre-Requisites
+- Node.js (>= 10.0.0)
+- Docker
+- Docker Compose
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Recommended
 
-## Code scaffolding
+Use [NVM](https://github.com/creationix/nvm) to install Node.js and NPM, inside the root of the project execute:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+$ nvm use
+```
 
-## Build
+## Setup
+- Clone this repo
+- Install the dependencies on both frontend and backend folders by executing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+$ npm install
+```
+- To setup the environment variables needed, create a `.env` file inside of the `frontend` and `backend` folders based on each `.env-template` file that's inside the respective folders
+- Then on the root folder execute:
 
-## Running unit tests
+```
+$ docker-compose up
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+By default the application starts at http://localhost:4200 and the API at http://localhost:3000

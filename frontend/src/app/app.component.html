@@ -1,0 +1,6 @@
+<mat-progress-bar *ngIf="loadingWeatherInfo" mode="indeterminate"></mat-progress-bar>
+<div class="outer-wrapper">
+  <div #wrapper class="map-wrapper">
+    <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="getWeatherInfo($event)" [zoomControl]="false" [maxZoom]="9" [minZoom]="9"></agm-map>
+  </div>
+</div>
